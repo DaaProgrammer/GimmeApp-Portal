@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"    # change this line
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    links:
+      - db
+    environment:
+      ENVIRONMENT: development
+      BASE_URL: http://localhost/
+      API_URL: https://duendedisplay.co.za/gimme/
+      # API_URL: http://localhost/
+      MAPBOX_API: pk.eyJ1IjoiZ2ltbWVzdGF0IiwiYSI6ImNscmFqM2szYTBjd3EybW1ranA1ZDk4MzIifQ.hPv9rOyRX5gY2p4yAwdSig
+
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+
+volumes:
+  db_data:

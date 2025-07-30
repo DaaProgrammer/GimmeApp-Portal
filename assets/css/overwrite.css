@@ -1,0 +1,133 @@
+.navbar-vertical .navbar-brand>img, .navbar-vertical .navbar-brand-img {
+    max-width: 100%;
+    max-height: 2.8rem;
+}
+.bg-gradient-dark {
+    background-image: linear-gradient(195deg, #167225 0%, #00b240 100%);
+}
+#snackbar {
+    display: none;
+}
+
+  .custom-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }  
+
+  /* General Styles for Pagination */
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.tui-page-btn {
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #616161;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tui-page-btn span {
+  pointer-events: none;  /* Make sure the span inside doesn't interfere with the click event */
+}
+
+/* Active and Hover States */
+.tui-is-selected, .tui-page-btn:hover {
+  background-color: #3F51B5;  /* Material Design Indigo Color */
+  color: #FFFFFF;
+}
+
+/* Disabled State */
+.tui-is-disabled {
+  background-color: #E0E0E0;
+  color: #9E9E9E;
+  cursor: not-allowed;
+}
+
+.tui-is-disabled:hover {
+  background-color: #E0E0E0;
+  color: #9E9E9E;
+}
+
+button.close {
+  background: white;
+  border: none;
+}
+
+textarea {
+  border: 1px solid #213e9a38 !important;
+  padding: 10px !important;
+}
+
+select {
+  padding: 10px !important;
+  border: 1px solid #213e9a38 !important;
+  color: #2bb240 !important;
+}
+
+select option {
+  color: #2bb240;
+}
+
+.dropdown-content{
+  border: 2px solid #213e9a;
+}
+
+.note{
+  font-size: 13px;
+  font-weight: 350;
+  margin-top: 10px;
+}
+
+.highlight-required{
+  color:red;
+  padding-left:2px;
+}
+
+.navbar-vertical .navbar-brand>img, .navbar-vertical .navbar-brand-img {
+  max-height: 100px;
+}
+
+.sidenav-header {
+  height: 130px;
+}
+
+.sidenav .navbar-brand {
+  text-align: center;
+}
+
+input[type=button].w2ui-btn-blue, button.w2ui-btn-blue {
+  color: white !important;
+  background-image: linear-gradient(#2bb240 0%, #2bb240 100%) !important;
+  border: 1px solid #1d832c !important;
+  text-shadow: none;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.w2ui-grid .w2ui-grid-toolbar .w2ui-grid-search-input .w2ui-search-drop:hover, .w2ui-grid .w2ui-grid-toolbar .w2ui-grid-search-input .w2ui-search-drop.checked {
+  background-color: #2bb240 !important;
+}
+
+.w2ui-tabs .w2ui-scroll-wrapper .w2ui-tab.active {
+  color: #2bb240 !important;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #2bb240 !important;
+  margin-bottom: 0px;
+}
